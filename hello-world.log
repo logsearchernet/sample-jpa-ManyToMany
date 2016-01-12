@@ -1,0 +1,303 @@
+12:46:36,195 DEBUG SQL:109 - 
+    alter table movie_actor 
+        drop 
+        foreign key FK_ajdqvhwxqsxneys3ti0q693lh
+12:46:36,210 DEBUG SQL:109 - 
+    alter table movie_actor 
+        drop 
+        foreign key FK_4bngxc3mkdpf5vkuij4yk2egf
+12:46:36,210 DEBUG SQL:109 - 
+    drop table if exists Actor
+12:46:36,210 DEBUG SQL:109 - 
+    drop table if exists Movie
+12:46:36,210 DEBUG SQL:109 - 
+    drop table if exists movie_actor
+12:46:36,210 DEBUG SQL:109 - 
+    create table Actor (
+        id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    )
+12:46:36,944 DEBUG SQL:109 - 
+    create table Movie (
+        id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    )
+12:46:37,942 DEBUG SQL:109 - 
+    create table movie_actor (
+        movie_id bigint not null,
+        actor_id bigint not null,
+        primary key (movie_id, actor_id)
+    )
+12:46:38,285 DEBUG SQL:109 - 
+    alter table movie_actor 
+        add constraint FK_ajdqvhwxqsxneys3ti0q693lh 
+        foreign key (actor_id) 
+        references Actor (id)
+12:46:39,393 DEBUG SQL:109 - 
+    alter table movie_actor 
+        add constraint FK_4bngxc3mkdpf5vkuij4yk2egf 
+        foreign key (movie_id) 
+        references Movie (id)
+12:46:40,656 DEBUG SQL:109 - 
+    insert 
+    into
+        Movie
+        (name) 
+    values
+        (?)
+12:46:40,672 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [American Hustle]
+12:46:40,672 DEBUG SQL:109 - 
+    insert 
+    into
+        Actor
+        (name) 
+    values
+        (?)
+12:46:40,672 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [Christian Bale]
+12:46:40,672 DEBUG SQL:109 - 
+    insert 
+    into
+        Movie
+        (name) 
+    values
+        (?)
+12:46:40,688 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [The Prestige]
+12:46:40,688 DEBUG SQL:109 - 
+    insert 
+    into
+        Actor
+        (name) 
+    values
+        (?)
+12:46:40,688 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [Hugh Jackman]
+12:46:40,703 DEBUG SQL:109 - 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+12:46:40,703 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+12:46:40,703 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [1]
+12:46:40,783 DEBUG SQL:109 - 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+12:46:40,783 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+12:46:40,783 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [1]
+12:46:40,799 DEBUG SQL:109 - 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+12:46:40,799 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+12:46:40,799 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [2]
+12:50:02,158 DEBUG SQL:109 - 
+    alter table movie_actor 
+        drop 
+        foreign key FK_ajdqvhwxqsxneys3ti0q693lh
+12:50:02,377 DEBUG SQL:109 - 
+    alter table movie_actor 
+        drop 
+        foreign key FK_4bngxc3mkdpf5vkuij4yk2egf
+12:50:02,519 DEBUG SQL:109 - 
+    drop table if exists Actor
+12:50:02,670 DEBUG SQL:109 - 
+    drop table if exists Movie
+12:50:02,824 DEBUG SQL:109 - 
+    drop table if exists movie_actor
+12:50:03,001 DEBUG SQL:109 - 
+    create table Actor (
+        id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    )
+12:50:03,353 DEBUG SQL:109 - 
+    create table Movie (
+        id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    )
+12:50:03,871 DEBUG SQL:109 - 
+    create table movie_actor (
+        movie_id bigint not null,
+        actor_id bigint not null,
+        primary key (movie_id, actor_id)
+    )
+12:50:04,257 DEBUG SQL:109 - 
+    alter table movie_actor 
+        add constraint FK_ajdqvhwxqsxneys3ti0q693lh 
+        foreign key (actor_id) 
+        references Actor (id)
+12:50:05,356 DEBUG SQL:109 - 
+    alter table movie_actor 
+        add constraint FK_4bngxc3mkdpf5vkuij4yk2egf 
+        foreign key (movie_id) 
+        references Movie (id)
+12:50:06,875 DEBUG SQL:109 - 
+    insert 
+    into
+        Movie
+        (name) 
+    values
+        (?)
+12:50:06,887 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [American Hustle]
+12:50:06,912 DEBUG SQL:109 - 
+    insert 
+    into
+        Actor
+        (name) 
+    values
+        (?)
+12:50:06,913 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [Christian Bale]
+12:50:06,916 DEBUG SQL:109 - 
+    insert 
+    into
+        Movie
+        (name) 
+    values
+        (?)
+12:50:06,917 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [The Prestige]
+12:50:06,921 DEBUG SQL:109 - 
+    insert 
+    into
+        Actor
+        (name) 
+    values
+        (?)
+12:50:06,921 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [Hugh Jackman]
+12:50:06,937 DEBUG SQL:109 - 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+12:50:06,939 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+12:50:06,939 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [1]
+12:50:07,072 DEBUG SQL:109 - 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+12:50:07,072 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+12:50:07,073 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [2]
+12:50:07,074 DEBUG SQL:109 - 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+12:50:07,075 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+12:50:07,075 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [1]
+12:57:30,933 DEBUG SQL:109 - 
+    alter table movie_actor 
+        drop 
+        foreign key FK_ajdqvhwxqsxneys3ti0q693lh
+12:57:31,164 DEBUG SQL:109 - 
+    alter table movie_actor 
+        drop 
+        foreign key FK_4bngxc3mkdpf5vkuij4yk2egf
+12:57:31,256 DEBUG SQL:109 - 
+    drop table if exists Actor
+12:57:31,407 DEBUG SQL:109 - 
+    drop table if exists Movie
+12:57:31,674 DEBUG SQL:109 - 
+    drop table if exists movie_actor
+12:57:31,847 DEBUG SQL:109 - 
+    create table Actor (
+        id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    )
+12:57:32,177 DEBUG SQL:109 - 
+    create table Movie (
+        id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    )
+12:57:32,562 DEBUG SQL:109 - 
+    create table movie_actor (
+        movie_id bigint not null,
+        actor_id bigint not null,
+        primary key (movie_id, actor_id)
+    )
+12:57:33,244 DEBUG SQL:109 - 
+    alter table movie_actor 
+        add constraint FK_ajdqvhwxqsxneys3ti0q693lh 
+        foreign key (actor_id) 
+        references Actor (id)
+12:57:33,998 DEBUG SQL:109 - 
+    alter table movie_actor 
+        add constraint FK_4bngxc3mkdpf5vkuij4yk2egf 
+        foreign key (movie_id) 
+        references Movie (id)
+12:57:34,882 DEBUG SQL:109 - 
+    insert 
+    into
+        Movie
+        (name) 
+    values
+        (?)
+12:57:34,893 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [American Hustle]
+12:57:34,902 DEBUG SQL:109 - 
+    insert 
+    into
+        Actor
+        (name) 
+    values
+        (?)
+12:57:34,903 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [Christian Bale]
+12:57:34,906 DEBUG SQL:109 - 
+    insert 
+    into
+        Movie
+        (name) 
+    values
+        (?)
+12:57:34,906 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [The Prestige]
+12:57:34,909 DEBUG SQL:109 - 
+    insert 
+    into
+        Actor
+        (name) 
+    values
+        (?)
+12:57:34,910 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [Hugh Jackman]
+12:57:34,924 DEBUG SQL:109 - 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+12:57:34,925 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+12:57:34,926 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [1]
+12:57:35,006 DEBUG SQL:109 - 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+12:57:35,006 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+12:57:35,006 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [2]
+12:57:35,008 DEBUG SQL:109 - 
+    insert 
+    into
+        movie_actor
+        (movie_id, actor_id) 
+    values
+        (?, ?)
+12:57:35,008 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+12:57:35,009 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [1]
